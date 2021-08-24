@@ -15,7 +15,7 @@ namespace CodingChallenges
             // Populate dictionary
             foreach (var entry in line)
             {
-                int digit = entry - '0';
+                int digit = entry - '0'; // - '0' allows numerical char to be treated as if it were an int.
                 if (digitToFrequencyDict.ContainsKey(digit))
                 {
                     digitToFrequencyDict[digit]++;
